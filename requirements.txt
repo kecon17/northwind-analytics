@@ -1,0 +1,10 @@
+# Core application
+streamlit
+pandas
+SQLAlchemy
+pymssql
+python-dotenv
+plotly
+
+# Testing
+pytest
