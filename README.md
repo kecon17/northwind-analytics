@@ -35,7 +35,7 @@ For a visual representation of the database schema, please see the entity relati
 
 This project uses a simple and efficient **in-memory ETL architecture**. The entire data pipeline is orchestrated by Python and executed when the Streamlit application starts.
 
-```mermaid
+```bash
 graph TD
     A[SQL Server Database] -- 1. Extract --> B{Python Application \n (Running in Docker)};
     B -- 2. Transform in Memory --> B;
@@ -244,10 +244,10 @@ If a test fails, `pytest` will provide a detailed traceback, highlighting the sp
 ## Dashboard Screenshots
 
 *App main page. Multi-dashboards on the left side.*
-![Main page](screenshots\main_page.png)
+![Main page](screenshots/main_page.png)
 
 *Example: Operational Performance Dashboard.*
-![Operational Performance](screenshots\operational_perforrmance.png)
+![Operational Performance](screenshots/operational_perforrmance.png)
 
 The other dashboards are located in the `screenshots/` folder.
 
