@@ -37,7 +37,7 @@ This project uses a simple and efficient **in-memory ETL architecture**. The ent
 
 ```mermaid
 graph TD
-    A[SQL Server Database] -- 1. Extract --> B{Python Application <br> (Running in Docker)};
+    A[SQL Server Database] -- 1. Extract --> B["Python Application \n (Running in Docker)"];
     B -- 2. Transform in Memory --> B;
     B -- 3. Load to UI --> C[User's Web Browser];
 ```
