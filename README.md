@@ -35,9 +35,9 @@ For a visual representation of the database schema, please see the entity relati
 
 This project uses a simple and efficient **in-memory ETL architecture**. The entire data pipeline is orchestrated by Python and executed when the Streamlit application starts.
 
-```bash
+```mermaid
 graph TD
-    A[SQL Server Database] -- 1. Extract --> B{Python Application \n (Running in Docker)};
+    A[SQL Server Database] -- 1. Extract --> B{Python Application <br> (Running in Docker)};
     B -- 2. Transform in Memory --> B;
     B -- 3. Load to UI --> C[User's Web Browser];
 ```
@@ -154,8 +154,8 @@ DB_PASSWORD=
 Once everything is configured, run the Streamlit app from your terminal:
 
 ```bash
-streamlit run dashboard.py # option 1
-python -m streamlit run dashboard.py  # option 2
+streamlit run app.py             # option 1
+python -m streamlit run app.py   # option 2
 ```
 
 Your web browser should open with the dashboard at `http://localhost:8501`.
